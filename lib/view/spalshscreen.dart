@@ -4,7 +4,6 @@ import 'package:lottie/lottie.dart';
 import 'package:todo_app/controllers/authentication/authentication_bloc.dart';
 import 'package:todo_app/core/enums/enums.dart';
 import 'package:todo_app/view/authentication_page.dart';
-import 'package:todo_app/view/home.dart';
 import 'package:todo_app/view/validate_user_page.dart';
 
 class SplashScreen extends StatelessWidget {

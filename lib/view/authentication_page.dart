@@ -23,7 +23,7 @@ class UserAuth extends StatelessWidget {
         listener: (context, state) {
           if (state.signUP.status == StateStatus.success) {
             Navigator.of(context).pushReplacement(MaterialPageRoute(
-              builder: (context) => HomePage(),
+              builder: (context) =>const HomePage(),
             ));
           } else if (state.signUP.status == StateStatus.error) {
             alertController.warningAlert(state.validate.errorMessage!);

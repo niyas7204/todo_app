@@ -1,11 +1,9 @@
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:todo_app/constants/space_sized.dart';
 import 'package:todo_app/controllers/todo/todo_bloc.dart';
 import 'package:todo_app/core/enums/enums.dart';
-import 'package:todo_app/data/models/todo_model.dart';
 import 'package:todo_app/view/utils/activity_edit_diologe.dart';
 import 'package:todo_app/view/utils/activity_tile.dart';
 import 'package:todo_app/view/utils/styled_texts.dart';

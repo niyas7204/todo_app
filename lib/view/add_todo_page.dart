@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:todo_app/constants/space_sized.dart';
 import 'package:todo_app/controllers/todo/todo_bloc.dart';
-import 'package:todo_app/core/enums/days_enum.dart';
 import 'package:todo_app/view/utils/activity_text_field.dart';
 import 'package:todo_app/view/utils/day_bottom.dart';
 import 'package:todo_app/view/utils/styled_texts.dart';
@@ -30,8 +29,7 @@ class AddTodoPage extends StatelessWidget {
           bool isContains = state.todo!.data!
               .any((element) => element.day == state.daySelection);
           if (isContains) {
-            log("contain");
-          }
+           }
           return SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:todo_app/constants/space_sized.dart';
 import 'package:todo_app/controllers/todo/todo_bloc.dart';
-import 'package:todo_app/data/models/todo_model.dart';
 import 'package:todo_app/view/utils/show_activities.dart';
 import 'package:todo_app/view/utils/styled_texts.dart';
 

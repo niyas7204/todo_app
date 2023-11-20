@@ -1,5 +1,4 @@
-import 'dart:developer';
-import 'dart:ffi';
+
 
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:todo_app/core/enums/days_enum.dart';
@@ -13,21 +12,20 @@ class TodoImplimentation implements TodoActivityServices {
 //initialize hive
   @override
   Future<void> initializeHive() async {
-    log('init');
+ 
     await Hive.initFlutter();
     Hive.registerAdapter(TodoModelAdapter());
     Hive.registerAdapter(ActivityModelAdapter());
     Hive.registerAdapter(DaysAdapter());
 
-    log('inti com');
+ 
   }
 
 //Add todo
   @override
   Future<StateResponse<List<TodoModel>>> addTodo(
       {required TodoModel todo}) async {
-    log('todo impliment');
-    final todoBox = await Hive.openBox<TodoModel>('todo');
+     final todoBox = await Hive.openBox<TodoModel>('todo');
 
     try {
       await todoBox.add(todo);
@@ -44,8 +42,7 @@ class TodoImplimentation implements TodoActivityServices {
   @override
   Future<StateResponse<List<TodoModel>>> getData() async {
     final todoBox = await Hive.openBox<TodoModel>('todo');
-    log('todo impliment');
-    try {
+     try {
       final todo = todoBox.values.toList();
       if (todo.length > 1) {
         for (int i = 0; i < todo.length - 1; i++) {
@@ -58,11 +55,9 @@ class TodoImplimentation implements TodoActivityServices {
           }
         }
       }
-      log(todo.toString());
-      return StateResponse.success(todo);
+       return StateResponse.success(todo);
     } catch (e) {
-      log('error $e');
-      return StateResponse.error('Failed fetch Data');
+       return StateResponse.error('Failed fetch Data');
     }
   }
 

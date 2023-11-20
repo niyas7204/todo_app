@@ -54,8 +54,7 @@ class HomePage extends StatelessWidget {
                     ),
                   );
                 case StateStatus.success:
-                  log('success');
-                  return SafeArea(
+                   return SafeArea(
                       child: Padding(
                           padding: const EdgeInsets.all(15),
                           child: Column(

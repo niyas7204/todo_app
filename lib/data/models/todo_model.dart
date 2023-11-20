@@ -1,5 +1,4 @@
 import 'package:todo_app/core/enums/days_enum.dart';
-import 'package:todo_app/core/enums/enums.dart';
 import 'package:todo_app/data/models/activity_model.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:hive/hive.dart';

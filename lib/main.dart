@@ -6,7 +6,6 @@ import 'package:todo_app/controllers/todo/todo_bloc.dart';
 import 'package:todo_app/data/data_providers/auth_implimentation.dart';
 import 'package:todo_app/data/data_providers/delete_todo_implimentation.dart';
 import 'package:todo_app/data/data_providers/todo_implimentation.dart';
-import 'package:todo_app/data/repsository/delete_todo_services.dart';
 import 'package:todo_app/firebase_options.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
